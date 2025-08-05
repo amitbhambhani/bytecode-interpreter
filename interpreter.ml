@@ -195,7 +195,6 @@ let interpreter ((input : string), (output : string)) : unit =
         (* end the function only if scope levels are the same *)
         | FUNEND::cs -> 
             if scope = currScope then
-                https://ocaml.org/manual/5.3/api/List.html *)
                 ((List.rev (FUNEND::fcl)), cs)
             else 
                 (* keep recording commands if we haven't met the right scope level *)
